@@ -9,6 +9,7 @@
         <module name="akka-esb-monitor" />
         <module name="esb-common" />
         <module name="esb-example" />
+        <module name="esb-monitor-admin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,6 +17,7 @@
       <module name="esb-common" target="1.6" />
       <module name="esb-core-server" target="1.5" />
       <module name="esb-example" target="1.6" />
+      <module name="esb-monitor-admin" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

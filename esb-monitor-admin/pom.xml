@@ -6,7 +6,7 @@
 		<artifactId>esb-core-server</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>akka-esb-monitor</artifactId>
+	<artifactId>esb-monitor-admin</artifactId>
 	<packaging>war</packaging>
 	<description>监控中心的Web控制台</description>
 
@@ -15,7 +15,7 @@
 	</properties>
 
 	<build>
-		<finalName>akka-esb-monitor</finalName>
+		<finalName>esb-monitor-admin</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -30,7 +30,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.esb</groupId>
-			<artifactId>esb-core-server</artifactId>
+			<artifactId>esb-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>

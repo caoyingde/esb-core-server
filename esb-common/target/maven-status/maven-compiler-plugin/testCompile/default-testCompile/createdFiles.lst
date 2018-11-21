@@ -1,0 +1,6 @@
+org\esb\config\spring\WebServiceTest.class
+org\esb\config\spring\MonitorTest.class
+org\esb\config\spring\ProviderTest.class
+org\esb\config\spring\CoreTest.class
+org\esb\config\spring\ConsumerTest.class
+org\esb\config\spring\PackageScanTest.class

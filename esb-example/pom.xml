@@ -17,7 +17,7 @@
     </properties>
 
     <build>
-        <finalName>akka-test</finalName>
+        <finalName>akka-example</finalName>
         <sourceDirectory>src/main/java</sourceDirectory>
         <resources>
             <resource>

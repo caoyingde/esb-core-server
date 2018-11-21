@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="akka-esb-monitor:war">
-    <output-path>$PROJECT_DIR$/esb-monitor-admin/target</output-path>
-    <root id="archive" name="akka-esb-monitor.war">
-      <element id="artifact" artifact-name="akka-esb-monitor:war exploded" />
-    </root>
-  </artifact>
-</component>
