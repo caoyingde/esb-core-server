@@ -1,5 +1,7 @@
 Esb-core-server is a high-performance lightweight data service bus built with Akka. It supports dynamic registration and monitoring of clusters and data access. Currently, single-node support is called 1 billion times a day.
 
+![image](https://github.com/caoyingde/esb-core-server/blob/master/esb-example/doc/run.png)
+
    1 Introduction
 
   1.1 Background
