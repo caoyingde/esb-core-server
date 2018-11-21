@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad0ca181-ccfd-41a4-9f42-db290496608e" name="Default Changelist" comment="" />
+    <list default="true" id="ad0ca181-ccfd-41a4-9f42-db290496608e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/esb-example/doc/akka.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/esb-common/target/" />
     <ignored path="$PROJECT_DIR$/esb-monitor-admin/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,7 +40,7 @@
         <counts>
           <entry key="html" value="3" />
           <entry key="java" value="89" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="properties" value="3" />
           <entry key="xml" value="12" />
         </counts>
@@ -45,7 +49,7 @@
         <counts>
           <entry key="HTML" value="3" />
           <entry key="JAVA" value="89" />
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="Properties" value="3" />
           <entry key="XML" value="12" />
         </counts>
@@ -54,6 +58,7 @@
         <counts>
           <entry key="html" value="15" />
           <entry key="java" value="54" />
+          <entry key="md" value="4" />
           <entry key="xml" value="60" />
         </counts>
       </usages-collector>
@@ -62,6 +67,7 @@
           <entry key="DTD" value="2" />
           <entry key="HTML" value="15" />
           <entry key="JAVA" value="54" />
+          <entry key="Markdown" value="4" />
           <entry key="XML" value="58" />
         </counts>
       </usages-collector>
@@ -69,18 +75,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/WebServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/PackageScanTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -117,11 +111,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/akka/AkkaEsbSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+            <state relative-caret-position="289">
+              <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="170">
+                <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -181,7 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/RpcBeanProxy.java" />
         <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/RpcEvent.java" />
         <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/RpcProviderActor.java" />
         <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/RpcServerActor.java" />
@@ -232,6 +237,7 @@
         <option value="$PROJECT_DIR$/esb-example/pom.xml" />
         <option value="$PROJECT_DIR$/esb-monitor-admin/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -277,101 +283,13 @@
             <path>
               <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="esb-core" type="462c0819:PsiDirectoryNode" />
-              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
-              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
-              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
-              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
-              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
-              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="esb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
-              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="esb" type="462c0819:PsiDirectoryNode" />
-              <item name="akka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
-              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="esb" type="462c0819:PsiDirectoryNode" />
-              <item name="monitor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
-              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
               <item name="esb-example" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="esb-core" type="462c0819:PsiDirectoryNode" />
               <item name="esb-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
-              <item name="esb-monitor-admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
-              <item name="esb-monitor-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="doc" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -384,7 +302,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542783362285" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542784602293" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="D:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -392,6 +310,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="org.tinygroup.studio.service.component.PackagePrefixConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\git\esb-core\esb-example\doc" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -586,15 +509,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542779896206</updated>
-      <workItem from="1542779902863" duration="3455000" />
+      <workItem from="1542779902863" duration="4567000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3455000" />
+    <option name="totallyTimeSpent" value="4567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="UI Designer" />
@@ -602,7 +526,7 @@
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Application Servers" weight="0.32936078" />
       <window_info anchor="bottom" id="REST Client" />
@@ -618,7 +542,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.56229687" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.56229687" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -647,13 +571,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/tcp/SocketTcpActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/tcp/SocketTcpHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1005,8 +922,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/akka/AkkaEsbSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+        <state relative-caret-position="289">
+          <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="170">
+            <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

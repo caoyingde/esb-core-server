@@ -38,6 +38,10 @@ Consumer将所有提供者组成一个Router，可基于负载均衡来分发消
 
 2.3 架构特性
 
+-->init -->HeatBeat -->Sync Call
+
+![image](http://github.com/itmyhome2013/readme_add_pic/raw/master/images/nongshalie.jpg)
+
 2.3.1 高性能
 
 整个架构的核心代码都是基于Akka构建，Akka的Actor编程模型为整个架构的性能提供了很好的保证。Akka的特点如下：
