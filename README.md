@@ -1,3 +1,123 @@
+Esb-core-server is a high-performance lightweight data service bus built with Akka. It supports dynamic registration and monitoring of clusters and data access. Currently, single-node support is called 1 billion times a day.
+
+   1 Introduction
+
+  1.1 Background
+
+   The construction of an enterprise information bus (ESB) helps to optimize the overall IT architecture. Its primary task should be to build an EASB (Enterprise Application Service Bus) and an EDSB (Enterprise Data Service Bus). EASB realizes the sharing of application services by registering and distributing application services of different systems, shielding the differences in communication and data delivery methods of different systems; EDSB provides high-speed channels for data transmission between different systems, and realizes data conversion based on certain standards. Store and provide direct data services to the outside world. The EDSB can realize the loose coupling of data relationships between different systems, and realize the information resource sharing of enterprises in a more direct way.
+We use Akka and Spring to build a highly scalable, highly concurrent distributed architecture data service bus, and maintain a certain degree of programming simplicity, management ease of operation.
+
+1.2 Akka
+
+Akka is a library written in Scala to simplify the writing of fault-tolerant, highly scalable Java and Scala Actor model applications. It has been successfully used in the telecommunications industry. The system will hardly crash (high availability 99.9999999 % only 31 ms down every year). Actors enable you to manage service failure management (regulators), load management (mitigation strategies, timeouts and isolation), horizontal and vertical scalability (increasing cpu cores and/or adding more machines). Akka 2.3 provides Cluster Sharing and Persistence capabilities to easily write a large distributed cluster architecture.
+Akka will be the core of the entire system, responsible for the delivery of all data messages, cluster implementation, RPC and more.
+
+1.3 Spring
+
+The Spring Framework provides an easy way to develop a large number of property files and helper classes that can cause the underlying code to become confusing. With Spring's IOC (Reverse Control) and DI (Dependency Injection) to make the entire code structure simpler, and Spring has a wide range of usability, it is easier to publish existing Spring Beans directly as a service.
+In the upper application of the entire ESB, it is built with Spring Bean. Spring shields Akka's learning curve, and Spring's high adhesion makes it easy to integrate with other frameworks.
+
+2 Service Bus Architecture
+
+-->init -->HeatBeat -->Sync Call
+![image](https://github.com/caoyingde/esb-core-server/blob/master/esb-example/doc/akka.png)
+
+2.1 Node Role Description
+
+Provider: Service Provider
+Consumer: Service Consumer
+Core: Service Center, responsible for finding services, data distribution, state persistence, etc.
+Monitor: the monitoring service call center and call time monitoring center
+In the entire architecture, each node is a seed-node in the cluster, an ActorSystem. The Provider and Consumer of the business service are written by the developers themselves, they may be in the same project, the same ActorSystem. Because a service may consume other services, then provide a new service. But we need to avoid this as much as possible.
+
+2.2 Call relationship description
+
+The service center Core needs to be activated first, exposing the addresses of a group of Core nodes.
+When the Provider starts, it will rely on the existing Core node to join the cluster. And register your own services with Core.
+When the Consumer starts, it depends on the existing Core node to join the cluster. I want to register to subscribe to the services I need.
+The service center returns the service provider address to the consumer, and if there is a change, each node will be notified via Akka's distributed message publishing/subscription.
+The Consumer groups all providers into one Router, which can distribute messages based on load balancing. If the call fails, it will select another address to call.
+The service consumer and provider, the cumulative number of calls and the call time in memory, the statistics are sent to the monitoring center every minute. The monitoring center sends heartbeats to each node to obtain the load status of each node. Any node leaving the cluster will be notified to the monitoring center, and the monitoring center can notify the developer in other ways.
+
+2.3 Architecture Features
+
+2.3.1 High performance
+
+The core code of the entire architecture is based on Akka build, Akka's Actor programming model provides a good guarantee for the performance of the entire architecture. The characteristics of Akka are as follows:
+
+Everything in the system can act as an actor
+Actors are completely independent
+All actions taken by the Actor when the message is received are parallel, and the actions in one method are not in an explicit order.
+Actor is identified by the identifier and current behavior
+Actors may be classified into primitive and non primitive categories
+Non-original Actors
+An identifier represented by an email address
+The current behavior consists of a set of knowledge (acquaintances) (instance variables or local state) and defines the actions that the Actor will take when it receives the message.
+Message passing is non-blocking and asynchronous, the mechanism is mail queue (mail-queue)
+All messages are sent in parallel
+The state of each Actor can be persisted and automatically restored after the entire architecture is restarted.
+
+2.3.2 Connectivity
+
+The service center Core is only responsible for the registration and search of the service address, equivalent to the directory service. The service provider and the consumer only interact with the registration center at startup, and the registration center does not forward the request, and the pressure is small.
+The monitoring center is responsible for counting the number of service calls, calling time, etc. The statistics are sent to the monitoring center server once every minute after the memory is summarized, and displayed in a report.
+The service provider registers its service with the registration center and reports the call time to the monitoring center. This time does not include network overhead.
+The service consumer obtains the service provider address list from the registration center, and directly invokes the provider according to the load algorithm, and reports the call time to the monitoring center, which includes the network overhead.
+The service center, service provider, service consumer, and monitoring center are all nodes in the akka cluster. They are all equal relationships. They spread events through a distributed message subscription mechanism.
+The departure of any node can be perceived by the service center and then propagated to each node in the cluster.
+Service center and monitoring center are all down, do not affect the providers and consumers that have been running, consumers cache the list of providers locally
+
+2.3.3 Health
+
+Akka's own high fault tolerance, the system that can be written with Akka is almost no downtime (high availability 99.9999999 % only 31 ms a year down)
+Each part of the entire architecture is a peer-to-peer cluster. The address of each call does not care which server the Actor being called is on.
+All the monitoring centers will not affect the use, but only some of the sampled data will be lost.
+After the service center is down, the service providers and service consumers can still communicate through the local cache.
+The service provider is stateless, and any one of them will not affect the use.
+After the service provider is completely smashed, the service consumer application will be unavailable, wait for the service provider to recover, and rejoin the cluster.
+When any new node is added to the cluster, it will be broadcast to each node, and each node will store information about all other nodes. Unless you manually remove it through the Monitoring Center, any node can be added to an existing cluster when it is restored.
+
+
+2.3.4 Flexibility
+
+All nodes are peer-to-peer clusters, which can dynamically add machine deployment instances, and other nodes can get notifications of node joins.
+The Akka Actor's supervisor tree structure dynamically increases or decreases the number of Actors that actually do things in a single node.
+
+
+2.4 Implementation plan
+
+2.4.1 Akka
+
+2.4.1.1 Actor Model
+
+The Actor model is a relatively common model in concurrent programming. Many development languages ​​provide native Actor model support, such as erlang, scala, and more.
+Features of the Actor Model:
+A calculation of particles (granularity), each actor can be seen as a separate entity containing processing (behavior), storage (state), communication (message)
+Three principles - When an Actor receives a message, it can:
+Create some other Actors
+Send a message to a known Actor
+Specify behavior when receiving the next message
+The state and behavior of a single Actor is only driven by the received message
+A single actor processes the received message serially
+A single Actor is always thread safe
+A large number of Actors are active at the same time, and their behavior is parallel.
+Parallelism is the behavior of multiple Actors
+
+2.4.1.2 Akka's Actor Implementation
+
+Actor is a very lightweight computing unit
+50 million / sec message forwarding capability (single, single core, local)
+2.5 million Actors / GB of memory (about 400 bytes per empty Actor)
+The Actor is transparent in position and has the ability to distribute itself (each service in the architecture corresponds to at least one Actor, then each service has a unique address in the entire architecture)
+Create and find by address - local or remote node
+Accessing local or remote nodes only depends on the address (Path)
+Can be migrated across nodes
+Actors are supervised by hierarchy.
+Actors are hierarchically organized into a tree
+The parent Actor monitors the state of the child Actor and can be stopped, restarted, and restored when the condition is out.
+
+========================================================================================================================
+
 esb-core-server是一个用Akka构建的高性能轻量级的数据服务总线，支持集群、数据接入的动态注册、监控等功能，目前单节点支持日10亿次调用。
 
    1.简介
@@ -19,6 +139,8 @@ Spring Framework 提供了一个简易的开发方式，这种开发方式，将
 
 2 服务总线架构
 
+-->init -->HeatBeat -->Sync Call
+![image](https://github.com/caoyingde/esb-core-server/blob/master/esb-example/doc/akka.png)
 2.1 节点角色说明
 
 Provider：服务提供方
@@ -37,10 +159,6 @@ Consumer将所有提供者组成一个Router，可基于负载均衡来分发消
 服务消费者和提供者，在内存中累计调用次数和调用时间，定时每分钟发送一次统计数据到监控中心。监控中心定时会向各个节点发送心跳，获取各个节点的负荷状态。任何节点的离开集群都会通知给监控中心，监控中心可以采用其他方式通知开发人员。
 
 2.3 架构特性
-
--->init -->HeatBeat -->Sync Call
-
-![image](https://github.com/caoyingde/esb-core-server/blob/master/esb-example/doc/akka.png)
 
 2.3.1 高性能
 
