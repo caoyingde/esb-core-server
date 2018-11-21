@@ -23,7 +23,7 @@ import com.typesafe.config.ConfigFactory;
 
 /**
  * 
- * @author JiangFeng
+ * @author Andy.Cao
  */
 public class AkkaEsbSystem implements InitializingBean {
 	

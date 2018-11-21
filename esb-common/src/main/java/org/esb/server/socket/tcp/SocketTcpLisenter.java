@@ -7,45 +7,50 @@ import akka.io.Tcp.Connected;
 import akka.io.TcpMessage;
 import akka.util.ByteString;
 
+/**
+ * @author Andy.Cao
+ * @date 2018-11-21
+ * @deprecated
+ */
 public abstract class SocketTcpLisenter implements SocketLisenter {
 
-	private ActorRef handleActor;
-	
-	private Connected connected;
-	
-	private boolean ready;
+    private ActorRef handleActor;
 
-	public void setHandler(ActorRef handler) {
-		this.handleActor = handler;
-	}
+    private Connected connected;
 
-	public abstract void receive(ByteString data, ActorRef sender);
+    private boolean ready;
 
-	public void write(ByteString data, ActorRef sender) {
-		sender.tell(TcpMessage.write(data), handleActor);
-	}
+    public void setHandler(ActorRef handler) {
+        this.handleActor = handler;
+    }
 
-	public void write(ByteString data) {
-		handleActor.tell(TcpMessage.write(data), handleActor);
-	}
+    public abstract void receive(ByteString data, ActorRef sender);
 
-	@Override
-	public void setConnected(Connected conn) {
-		System.out.println("New Client:"
-				+ conn.remoteAddress().getAddress().toString());
-		ready = true;
-	}
+    public void write(ByteString data, ActorRef sender) {
+        sender.tell(TcpMessage.write(data), handleActor);
+    }
 
-	public boolean isReady() {
-		return ready;
-	}
+    public void write(ByteString data) {
+        handleActor.tell(TcpMessage.write(data), handleActor);
+    }
 
-	public void setReady(boolean ready) {
-		this.ready = ready;
-	}
+    @Override
+    public void setConnected(Connected conn) {
+        System.out.println("New Client:"
+                + conn.remoteAddress().getAddress().toString());
+        ready = true;
+    }
 
-	public Connected getConnected() {
-		return connected;
-	}
-	
+    public boolean isReady() {
+        return ready;
+    }
+
+    public void setReady(boolean ready) {
+        this.ready = ready;
+    }
+
+    public Connected getConnected() {
+        return connected;
+    }
+
 }

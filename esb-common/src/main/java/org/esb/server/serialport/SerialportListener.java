@@ -14,102 +14,107 @@ import java.util.TooManyListenersException;
 
 import org.apache.log4j.Logger;
 
+/**
+ * @author Andy.Cao
+ * @date 2018-11-21
+ * @deprecated
+ */
 public abstract class SerialportListener implements Runnable,
-		SerialPortEventListener {
+        SerialPortEventListener {
 
-	private Logger logger = Logger.getLogger(SerialportListener.class);
+    private Logger logger = Logger.getLogger(SerialportListener.class);
 
-	private CommPortIdentifier portId;
+    private CommPortIdentifier portId;
 
-	private Serialport serialport;
+    private Serialport serialport;
 
-	private Thread thread;
+    private Thread thread;
 
-	private InputStream inputStream;
+    private InputStream inputStream;
 
-	private OutputStream outputStream;
+    private OutputStream outputStream;
 
-	private SerialPort serialPort;
+    private SerialPort serialPort;
 
-	public SerialportListener() {
+    public SerialportListener() {
 
-	}
+    }
 
-	final protected void setCommPortIdentifier(CommPortIdentifier portId) {
-		this.portId = portId;
-	}
+    final protected void setCommPortIdentifier(CommPortIdentifier portId) {
+        this.portId = portId;
+    }
 
-	@Override
-	public void run() {
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
+    @Override
+    public void run() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
-	@Override
-	public void serialEvent(SerialPortEvent event) {
-		switch (event.getEventType()) {
-		case SerialPortEvent.BI:
-		case SerialPortEvent.OE:
-		case SerialPortEvent.FE:
-		case SerialPortEvent.PE:
-		case SerialPortEvent.CD:
-		case SerialPortEvent.CTS:
-		case SerialPortEvent.DSR:
-		case SerialPortEvent.RI:
-		case SerialPortEvent.OUTPUT_BUFFER_EMPTY:
-			break;
-		case SerialPortEvent.DATA_AVAILABLE:
-			try {
-				byte[] tt = new byte[inputStream.available()];
-				while (inputStream.available()>0) {
-					inputStream.read(tt);
-				}
-				receive(tt);
-			} catch (IOException e) {
-			}
-			break;
-		}
-	}
+    @Override
+    public void serialEvent(SerialPortEvent event) {
+        switch (event.getEventType()) {
+            case SerialPortEvent.BI:
+            case SerialPortEvent.OE:
+            case SerialPortEvent.FE:
+            case SerialPortEvent.PE:
+            case SerialPortEvent.CD:
+            case SerialPortEvent.CTS:
+            case SerialPortEvent.DSR:
+            case SerialPortEvent.RI:
+            case SerialPortEvent.OUTPUT_BUFFER_EMPTY:
+                break;
+            case SerialPortEvent.DATA_AVAILABLE:
+                try {
+                    byte[] tt = new byte[inputStream.available()];
+                    while (inputStream.available() > 0) {
+                        inputStream.read(tt);
+                    }
+                    receive(tt);
+                } catch (IOException e) {
+                }
+                break;
+        }
+    }
 
-	public abstract void receive(byte[] data);
+    public abstract void receive(byte[] data);
 
-	public void write(byte[] data) throws IOException {
-		logger.debug("Serialport write data:" + new String(data));
-		outputStream.write(data);
-	}
+    public void write(byte[] data) throws IOException {
+        logger.debug("Serialport write data:" + new String(data));
+        outputStream.write(data);
+    }
 
-	public void start() {
-		try {
-			serialPort = (SerialPort) portId.open(serialport.getPortId(),
-					serialport.getExpirationTime());
-			inputStream = serialPort.getInputStream();
-			outputStream = serialPort.getOutputStream();
-			serialPort.addEventListener(this);
-			serialPort.notifyOnDataAvailable(true);
-			serialPort.notifyOnOutputEmpty(true);
-			serialPort.setSerialPortParams(serialport.getSpeed(),
-					serialport.getDataBits(), serialport.getStopBits(),
-					serialport.getParity());
-			thread = new Thread(this);
-			thread.start();
-		} catch (PortInUseException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (TooManyListenersException e) {
-			e.printStackTrace();
-		} catch (UnsupportedCommOperationException e) {
-			e.printStackTrace();
-		} finally {
-		}
+    public void start() {
+        try {
+            serialPort = (SerialPort) portId.open(serialport.getPortId(),
+                    serialport.getExpirationTime());
+            inputStream = serialPort.getInputStream();
+            outputStream = serialPort.getOutputStream();
+            serialPort.addEventListener(this);
+            serialPort.notifyOnDataAvailable(true);
+            serialPort.notifyOnOutputEmpty(true);
+            serialPort.setSerialPortParams(serialport.getSpeed(),
+                    serialport.getDataBits(), serialport.getStopBits(),
+                    serialport.getParity());
+            thread = new Thread(this);
+            thread.start();
+        } catch (PortInUseException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (TooManyListenersException e) {
+            e.printStackTrace();
+        } catch (UnsupportedCommOperationException e) {
+            e.printStackTrace();
+        } finally {
+        }
 
-	}
+    }
 
-	protected void setSerialport(Serialport serialport) {
-		this.serialport = serialport;
-	}
+    protected void setSerialport(Serialport serialport) {
+        this.serialport = serialport;
+    }
 
 }

@@ -1,5 +1,9 @@
 package org.esb.common;
-
+/**
+ * @deprecated
+ * @author Andy.Cao
+ * @date 2018-11-21
+ */
 public enum Role {
 
 	CORE("core"), PROVIDER("provider"), MONITOR("monitor"), CONSUMER("consumer"), SERVER(

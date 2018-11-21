@@ -12,41 +12,46 @@ import org.esb.akka.AkkaEsbSystem;
 import akka.actor.ActorRef;
 import akka.actor.Props;
 
+/**
+ * @author Andy.Cao
+ * @date 2018-11-21
+ * @deprecated
+ */
 public class ServerFactoryBean implements ApplicationContextAware {
 
-	private Logger logger = Logger.getLogger(ServerFactoryBean.class);
+    private Logger logger = Logger.getLogger(ServerFactoryBean.class);
 
-	private AkkaEsbSystem akkaEsbSystem;
+    private AkkaEsbSystem akkaEsbSystem;
 
-	@Override
-	public void setApplicationContext(ApplicationContext applicationContext)
-			throws BeansException {
-		Map<String, Object> beans = applicationContext
-				.getBeansWithAnnotation(Server.class);
-		for (Iterator<String> iterator = beans.keySet().iterator(); iterator
-				.hasNext();) {
-			String key = iterator.next();
-			Object bean = beans.get(key);
-			if (bean instanceof BaseServer) {
-				BaseServer server = (BaseServer) bean;
-				ActorRef actorRef = akkaEsbSystem.getSystem()
-						.actorOf(
-								Props.create(
-										server.getActorClass(),
-										bean), bean.getClass().getName());
-				server.setActor(actorRef);
-				server.init();
-				logger.info(bean.getClass().getName());
-			}
-		}
-	}
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext)
+            throws BeansException {
+        Map<String, Object> beans = applicationContext
+                .getBeansWithAnnotation(Server.class);
+        for (Iterator<String> iterator = beans.keySet().iterator(); iterator
+                .hasNext(); ) {
+            String key = iterator.next();
+            Object bean = beans.get(key);
+            if (bean instanceof BaseServer) {
+                BaseServer server = (BaseServer) bean;
+                ActorRef actorRef = akkaEsbSystem.getSystem()
+                        .actorOf(
+                                Props.create(
+                                        server.getActorClass(),
+                                        bean), bean.getClass().getName());
+                server.setActor(actorRef);
+                server.init();
+                logger.info(bean.getClass().getName());
+            }
+        }
+    }
 
-	public AkkaEsbSystem getAkkaEsbSystem() {
-		return akkaEsbSystem;
-	}
+    public AkkaEsbSystem getAkkaEsbSystem() {
+        return akkaEsbSystem;
+    }
 
-	public void setAkkaEsbSystem(AkkaEsbSystem akkaEsbSystem) {
-		this.akkaEsbSystem = akkaEsbSystem;
-	}
+    public void setAkkaEsbSystem(AkkaEsbSystem akkaEsbSystem) {
+        this.akkaEsbSystem = akkaEsbSystem;
+    }
 
 }

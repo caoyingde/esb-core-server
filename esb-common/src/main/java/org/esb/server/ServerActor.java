@@ -12,67 +12,72 @@ import akka.actor.UntypedActor;
 import akka.io.Tcp.Connected;
 import akka.io.TcpMessage;
 
+/**
+ * @author Andy.Cao
+ * @date 2018-11-21
+ * @deprecated
+ */
 public class ServerActor extends UntypedActor {
 
-	private ActorRef monitor = EsbContext.getAkkaEsbSystem().getMonitorActor();
+    private ActorRef monitor = EsbContext.getAkkaEsbSystem().getMonitorActor();
 
-	private ServerEvent serverEvent;
+    private ServerEvent serverEvent;
 
-	public ServerActor(ServerEvent serverEvent) {
+    public ServerActor(ServerEvent serverEvent) {
 
-		this.serverEvent = serverEvent;
-		if (serverEvent instanceof Schedulable) {
-			Schedulable schedulable = (Schedulable) serverEvent;
-			ActorSystem system = getContext().system();
-			FiniteDuration begin = schedulable.getDelay() == null ? FiniteDuration
-					.Zero() : schedulable.getDelay();
-			if (schedulable.getPeriod() == null) {
-				system.scheduler().scheduleOnce(begin, getSelf(),
-						new ServerEvent.RUN(), system.dispatcher(), getSelf());
-			} else {
-				system.scheduler().schedule(begin, schedulable.getPeriod(),
-						getSelf(), new ServerEvent.RUN(), system.dispatcher(),
-						getSelf());
-			}
+        this.serverEvent = serverEvent;
+        if (serverEvent instanceof Schedulable) {
+            Schedulable schedulable = (Schedulable) serverEvent;
+            ActorSystem system = getContext().system();
+            FiniteDuration begin = schedulable.getDelay() == null ? FiniteDuration
+                    .Zero() : schedulable.getDelay();
+            if (schedulable.getPeriod() == null) {
+                system.scheduler().scheduleOnce(begin, getSelf(),
+                        new ServerEvent.RUN(), system.dispatcher(), getSelf());
+            } else {
+                system.scheduler().schedule(begin, schedulable.getPeriod(),
+                        getSelf(), new ServerEvent.RUN(), system.dispatcher(),
+                        getSelf());
+            }
 
-		} else {
-			getSelf().tell(new ServerEvent.RUN(), getSelf());
-		}
-	}
+        } else {
+            getSelf().tell(new ServerEvent.RUN(), getSelf());
+        }
+    }
 
-	@Override
-	public void onReceive(Object message) throws Exception {
-		if (message instanceof ServerEvent.RUN) {
-			System.out.println("RUN!!!");
-			serverEvent.preRun();
-			serverEvent.run();
-			serverEvent.postRun();
-		}
-	}
+    @Override
+    public void onReceive(Object message) throws Exception {
+        if (message instanceof ServerEvent.RUN) {
+            System.out.println("RUN!!!");
+            serverEvent.preRun();
+            serverEvent.run();
+            serverEvent.postRun();
+        }
+    }
 
-	@Override
-	public void postRestart(Throwable reason) throws Exception {
-		serverEvent.postRestart();
-		super.postRestart(reason);
-	}
+    @Override
+    public void postRestart(Throwable reason) throws Exception {
+        serverEvent.postRestart();
+        super.postRestart(reason);
+    }
 
-	@Override
-	public void postStop() throws Exception {
-		serverEvent.postStop();
-		super.postStop();
-	}
+    @Override
+    public void postStop() throws Exception {
+        serverEvent.postStop();
+        super.postStop();
+    }
 
-	@Override
-	public void preRestart(Throwable reason, Option<Object> message)
-			throws Exception {
-		serverEvent.preRestart();
-		super.preRestart(reason, message);
-	}
+    @Override
+    public void preRestart(Throwable reason, Option<Object> message)
+            throws Exception {
+        serverEvent.preRestart();
+        super.preRestart(reason, message);
+    }
 
-	@Override
-	public void preStart() throws Exception {
-		serverEvent.preStart();
-		super.preStart();
-	}
+    @Override
+    public void preStart() throws Exception {
+        serverEvent.preStart();
+        super.preStart();
+    }
 
 }

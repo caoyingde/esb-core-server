@@ -1,6 +1,10 @@
 package org.esb.akka;
 
-
+/**
+ * @deprecated
+ * @author Andy.Cao
+ * @date 2018-11-21
+ */
 public class EsbContext {
 
 	private static AkkaEsbSystem akkaEsbSystem;

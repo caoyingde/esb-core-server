@@ -13,27 +13,32 @@ import org.esb.common.URL;
 import org.esb.http.AbstractHttpServer;
 import org.esb.http.Handler;
 
+/**
+ * @author Andy.Cao
+ * @date 2018-11-21
+ * @deprecated
+ */
 public class UndertowServer extends AbstractHttpServer {
 
-	private Undertow server;
+    private Undertow server;
 
-	public UndertowServer(URL url, Handler handler) throws ServletException {
-		super(url, handler);
+    public UndertowServer(URL url, Handler handler) throws ServletException {
+        super(url, handler);
 
-		DeploymentInfo servletBuilder = Servlets.deployment()
-				.setClassLoader(UndertowServer.class.getClassLoader())
-				.setContextPath("/myapp").setDeploymentName("test.war");
+        DeploymentInfo servletBuilder = Servlets.deployment()
+                .setClassLoader(UndertowServer.class.getClassLoader())
+                .setContextPath("/myapp").setDeploymentName("test.war");
 
-		DeploymentManager manager = Servlets.defaultContainer().addDeployment(
-				servletBuilder);
-		manager.deploy();
+        DeploymentManager manager = Servlets.defaultContainer().addDeployment(
+                servletBuilder);
+        manager.deploy();
 
-		PathHandler path = Handlers.path(Handlers.redirect("/myapp"))
-				.addPrefixPath("/myapp", manager.start());
+        PathHandler path = Handlers.path(Handlers.redirect("/myapp"))
+                .addPrefixPath("/myapp", manager.start());
 
-		server = Undertow.builder()
-				.addHttpListener(url.getPort(), url.getHost()).setHandler(path)
-				.build();
-	}
+        server = Undertow.builder()
+                .addHttpListener(url.getPort(), url.getHost()).setHandler(path)
+                .build();
+    }
 
 }

@@ -8,25 +8,30 @@ import akka.io.Tcp.ConnectionClosed;
 import akka.io.Tcp.Received;
 import akka.util.ByteString;
 
+/**
+ * @author Andy.Cao
+ * @date 2018-11-21
+ * @deprecated
+ */
 public class SocketTcpHandler extends UntypedActor {
 
-	private SocketLisenter socketLisenter;
+    private SocketLisenter socketLisenter;
 
-	public SocketTcpHandler(SocketLisenter socketLisenter) {
-		this.socketLisenter = socketLisenter;
-		this.socketLisenter.setHandler(getSelf());
-	}
+    public SocketTcpHandler(SocketLisenter socketLisenter) {
+        this.socketLisenter = socketLisenter;
+        this.socketLisenter.setHandler(getSelf());
+    }
 
-	@Override
-	public void onReceive(Object msg) throws Exception {
-		if (msg instanceof Received) {
-			final ByteString data = ((Received) msg).data();
-			socketLisenter.receive(data, getSender());
-		} else if (msg instanceof ConnectionClosed) {
-			getContext().stop(getSelf());
-		} else if (msg instanceof Connected) {
-			socketLisenter.setHandler(getSender());
-		}
-	}
+    @Override
+    public void onReceive(Object msg) throws Exception {
+        if (msg instanceof Received) {
+            final ByteString data = ((Received) msg).data();
+            socketLisenter.receive(data, getSender());
+        } else if (msg instanceof ConnectionClosed) {
+            getContext().stop(getSelf());
+        } else if (msg instanceof Connected) {
+            socketLisenter.setHandler(getSender());
+        }
+    }
 
 }

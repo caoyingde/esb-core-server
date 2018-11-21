@@ -23,46 +23,51 @@ import org.apache.cxf.transport.servlet.ServletController;
 import org.apache.cxf.transport.servlet.ServletDestinationFactory;
 import org.esb.http.servlet.DispatcherServlet;
 
+/**
+ * @author Andy.Cao
+ * @date 2018-11-21
+ * @deprecated
+ */
 public class UndertowTest {
 
-	public static final String MYAPP = "/myapp";
+    public static final String MYAPP = "/myapp";
 
-	public static void main(final String[] args) {
+    public static void main(final String[] args) {
 
-		ExtensionManagerBus bus = new ExtensionManagerBus();
-		bus.setExtension(new ServletDestinationFactory(),
-				HttpDestinationFactory.class);
-		final HTTPTransportFactory transportFactory = new HTTPTransportFactory(
-				(DestinationRegistry) bus);
+        ExtensionManagerBus bus = new ExtensionManagerBus();
+        bus.setExtension(new ServletDestinationFactory(),
+                HttpDestinationFactory.class);
+        final HTTPTransportFactory transportFactory = new HTTPTransportFactory(
+                (DestinationRegistry) bus);
 
-		ServletInfo servletInfo = Servlets.servlet("MessageServlet",
-				DispatcherServlet.class).addMapping("/*");
-		
-		//servletInfo.
+        ServletInfo servletInfo = Servlets.servlet("MessageServlet",
+                DispatcherServlet.class).addMapping("/*");
 
-		DeploymentInfo servletBuilder = Servlets.deployment()
-				.setClassLoader(UndertowTest.class.getClassLoader())
-				.setContextPath(MYAPP).addServlet(servletInfo);
+        //servletInfo.
 
-		final DeploymentManager manager = Servlets.defaultContainer()
-				.addDeployment(servletBuilder);
-		manager.deploy();
+        DeploymentInfo servletBuilder = Servlets.deployment()
+                .setClassLoader(UndertowTest.class.getClassLoader())
+                .setContextPath(MYAPP).addServlet(servletInfo);
 
-		final ServletContext servletContext = manager.getDeployment()
-				.getServletContext();
+        final DeploymentManager manager = Servlets.defaultContainer()
+                .addDeployment(servletBuilder);
+        manager.deploy();
 
-		Undertow server = Undertow.builder().addHttpListener(8080, "localhost")
-				.setHandler(new HttpHandler() {
+        final ServletContext servletContext = manager.getDeployment()
+                .getServletContext();
 
-					private volatile ServletController servletController;
+        Undertow server = Undertow.builder().addHttpListener(8080, "localhost")
+                .setHandler(new HttpHandler() {
 
-					@Override
-					public void handleRequest(final HttpServerExchange exchange)
-							throws Exception {
-						HttpServletRequest request = new HttpServletRequestImpl(
-								exchange, (ServletContextImpl) servletContext);
-						HttpServletResponse response = new HttpServletResponseImpl(
-								exchange, (ServletContextImpl) servletContext);
+                    private volatile ServletController servletController;
+
+                    @Override
+                    public void handleRequest(final HttpServerExchange exchange)
+                            throws Exception {
+                        HttpServletRequest request = new HttpServletRequestImpl(
+                                exchange, (ServletContextImpl) servletContext);
+                        HttpServletResponse response = new HttpServletResponseImpl(
+                                exchange, (ServletContextImpl) servletContext);
 //						if (servletController == null) {
 //							synchronized (this) {
 //								if (servletController == null) {
@@ -72,9 +77,9 @@ public class UndertowTest {
 //								}
 //							}
 //						}
-						servletController.invoke(request, response);
-					}
-				}).build();
+                        servletController.invoke(request, response);
+                    }
+                }).build();
 
-	}
+    }
 }

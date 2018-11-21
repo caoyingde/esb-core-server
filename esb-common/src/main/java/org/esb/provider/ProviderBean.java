@@ -1,56 +1,60 @@
 package org.esb.provider;
 
-
+/**
+ * @author Andy.Cao
+ * @date 2018-11-21
+ * @deprecated
+ */
 public class ProviderBean {
 
-	private Class<?> interfaze;
-	private Object implementor;
-	private String[] protocols;
-	
-	public ProviderBean(Class<?> interfaze) {
-		super();
-		this.interfaze = interfaze;
-	}
+    private Class<?> interfaze;
+    private Object implementor;
+    private String[] protocols;
 
-	public ProviderBean(Class<?> interfaze, String[] protocols) {
-		super();
-		this.interfaze = interfaze;
-		this.protocols = protocols;
-	}
+    public ProviderBean(Class<?> interfaze) {
+        super();
+        this.interfaze = interfaze;
+    }
 
-	public ProviderBean(Class<?> interfaze, String[] protocols, Object implementor) {
-		super();
-		this.interfaze = interfaze;
-		this.protocols = protocols;
-		this.implementor = implementor;
-	}
+    public ProviderBean(Class<?> interfaze, String[] protocols) {
+        super();
+        this.interfaze = interfaze;
+        this.protocols = protocols;
+    }
 
-	public String getName() {
-		return interfaze.getName();
-	}
+    public ProviderBean(Class<?> interfaze, String[] protocols, Object implementor) {
+        super();
+        this.interfaze = interfaze;
+        this.protocols = protocols;
+        this.implementor = implementor;
+    }
 
-	public Class<?> getInterfaze() {
-		return interfaze;
-	}
+    public String getName() {
+        return interfaze.getName();
+    }
 
-	public void setInterfaze(Class<?> interfaze) {
-		this.interfaze = interfaze;
-	}
+    public Class<?> getInterfaze() {
+        return interfaze;
+    }
 
-	public Object getImplementor() {
-		return implementor;
-	}
+    public void setInterfaze(Class<?> interfaze) {
+        this.interfaze = interfaze;
+    }
 
-	public void setImplementor(Object implementor) {
-		this.implementor = implementor;
-	}
+    public Object getImplementor() {
+        return implementor;
+    }
 
-	public String[] getProtocols() {
-		return protocols;
-	}
+    public void setImplementor(Object implementor) {
+        this.implementor = implementor;
+    }
 
-	public void setProtocols(String[] protocols) {
-		this.protocols = protocols;
-	}
+    public String[] getProtocols() {
+        return protocols;
+    }
+
+    public void setProtocols(String[] protocols) {
+        this.protocols = protocols;
+    }
 
 }

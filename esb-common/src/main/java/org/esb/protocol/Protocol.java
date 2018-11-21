@@ -3,17 +3,22 @@ package org.esb.protocol;
 import org.esb.consumer.ConsumerBean;
 import org.esb.provider.ProviderBean;
 
+/**
+ * @author Andy.Cao
+ * @date 2018-11-21
+ * @deprecated
+ */
 public interface Protocol {
 
-	int getDefaultPort();
-	
-	String getProtocol();
+    int getDefaultPort();
 
-	String getProtocolName();
+    String getProtocol();
 
-	void provide(ProviderBean provider);
+    String getProtocolName();
 
-	<T> T consume(ConsumerBean consumer);
+    void provide(ProviderBean provider);
 
-	void start();
+    <T> T consume(ConsumerBean consumer);
+
+    void start();
 }

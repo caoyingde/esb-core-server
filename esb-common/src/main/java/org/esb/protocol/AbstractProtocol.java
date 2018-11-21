@@ -8,42 +8,47 @@ import org.esb.common.URL;
 import org.esb.consumer.ConsumerBean;
 import org.esb.provider.ProviderBean;
 
+/**
+ * @author Andy.Cao
+ * @date 2018-11-21
+ * @deprecated
+ */
 public abstract class AbstractProtocol implements Protocol, Serializable {
 
-	private static final long serialVersionUID = 1087532749177338091L;
+    private static final long serialVersionUID = 1087532749177338091L;
 
-	private final Set<String> providers = new HashSet<String>();
-	private final Set<String> consumers = new HashSet<String>();
-	
-	private URL url;
+    private final Set<String> providers = new HashSet<String>();
+    private final Set<String> consumers = new HashSet<String>();
 
-	@Override
-	public void provide(ProviderBean provider) {
-		providers.add(provider.getName());
-		doProvide(provider, getUrl());
-	}
+    private URL url;
 
-	@Override
-	public <T> T consume(ConsumerBean consumer) {
-		consumers.add(consumer.getName());
-		return doConsume(consumer,url);
-	}
+    @Override
+    public void provide(ProviderBean provider) {
+        providers.add(provider.getName());
+        doProvide(provider, getUrl());
+    }
 
-	protected abstract void doProvide(ProviderBean provider, URL url);
+    @Override
+    public <T> T consume(ConsumerBean consumer) {
+        consumers.add(consumer.getName());
+        return doConsume(consumer, url);
+    }
 
-	protected abstract <T> T doConsume(ConsumerBean consumer, final URL url);
+    protected abstract void doProvide(ProviderBean provider, URL url);
 
-	public URL getUrl() {
-		if(url == null){
-			url = getDefaultUrl();
-		}
-		return url;
-	}
+    protected abstract <T> T doConsume(ConsumerBean consumer, final URL url);
 
-	protected abstract URL getDefaultUrl();
+    public URL getUrl() {
+        if (url == null) {
+            url = getDefaultUrl();
+        }
+        return url;
+    }
 
-	public void setUrl(URL url) {
-		this.url = url;
-	}
-	
+    protected abstract URL getDefaultUrl();
+
+    public void setUrl(URL url) {
+        this.url = url;
+    }
+
 }

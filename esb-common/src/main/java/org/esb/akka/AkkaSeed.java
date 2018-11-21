@@ -6,7 +6,10 @@ import java.util.Iterator;
 import java.util.Set;
 
 import akka.cluster.Member;
-
+/**
+ * @author Andy.Cao
+ * @date 2018-11-21
+ */
 public class AkkaSeed implements Serializable {
 
 	private static final long serialVersionUID = 3573355594416259880L;
