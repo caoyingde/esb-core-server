@@ -3,7 +3,7 @@ package org.esb.config.spring;
 import org.apache.cxf.frontend.ServerFactoryBean;
 import org.apache.cxf.interceptor.LoggingInInterceptor;
 import org.apache.cxf.interceptor.LoggingOutInterceptor;
-import org.topteam.example.SimpleServiceImpl;
+import org.example.SimpleServiceImpl;
 
 public class WebServiceTest {
 

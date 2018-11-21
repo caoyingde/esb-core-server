@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="akka-esb-monitor" />
+        <module name="esb-common" />
+        <module name="esb-example" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="akka-esb-monitor" target="1.6" />
+      <module name="esb-common" target="1.6" />
+      <module name="esb-core-server" target="1.5" />
+      <module name="esb-example" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

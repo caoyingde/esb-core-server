@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.undertow:undertow-core:1.0.1.Final">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.m2/repository/io/undertow/undertow-core/1.0.1.Final/undertow-core-1.0.1.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.m2/repository/io/undertow/undertow-core/1.0.1.Final/undertow-core-1.0.1.Final-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.m2/repository/io/undertow/undertow-core/1.0.1.Final/undertow-core-1.0.1.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

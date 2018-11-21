@@ -3,8 +3,8 @@ package org.esb.config.spring;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.esb.consumer.ConsumerFactoryBean;
-import org.topteam.example.SimpleService;
-import org.topteam.example.TestPojo;
+import org.example.SimpleService;
+import org.example.TestPojo;
 
 public class ConsumerTest {
 

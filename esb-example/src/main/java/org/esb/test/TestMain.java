@@ -10,10 +10,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 /**
- * Created by 枫 on 2014/8/4.
+ * @author Andy.Cao
+ * @date 2018-11-21
+ * @deprecated
  */
 public class TestMain {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         try {
             File f = ResourceUtils.getFile(UrlUtil.url2Utf8(UrlUtil
                     .getDirFromClassLoader(TestMain.class))

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/esb-monitor-admin/akka-esb-monitor.iml" filepath="$PROJECT_DIR$/esb-monitor-admin/akka-esb-monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/esb-common/esb-common.iml" filepath="$PROJECT_DIR$/esb-common/esb-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/esb-core-server.iml" filepath="$PROJECT_DIR$/esb-core-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/esb-example/esb-example.iml" filepath="$PROJECT_DIR$/esb-example/esb-example.iml" />
+    </modules>
+  </component>
+</project>

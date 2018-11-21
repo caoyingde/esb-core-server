@@ -6,6 +6,11 @@ import javax.servlet.http.HttpSession;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
+/**
+ * @author Andy.Cao
+ * @date 2018-11-21
+ * @deprecated
+ */
 public abstract class BaseController {
     private Logger logger = Logger.getLogger(BaseController.class);
 
@@ -31,10 +36,10 @@ public abstract class BaseController {
     }
 
 
-    public String getContextPath(){
+    public String getContextPath() {
         return request.getContextPath();
     }
-	
+
 
 }
 

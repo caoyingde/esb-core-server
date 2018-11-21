@@ -46,7 +46,7 @@ public class PackageScanTest {
 	
 	public static void main(String[] args) {
 		PackageScanTest packageScanTest = new PackageScanTest();
-		List<Class<?>> clzs = packageScanTest.scanPackages("org.topteam.example");
+		List<Class<?>> clzs = packageScanTest.scanPackages("org.example");
 		System.out.println(clzs.size());
 	}
 }

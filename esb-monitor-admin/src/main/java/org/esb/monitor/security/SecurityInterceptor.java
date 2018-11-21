@@ -8,6 +8,11 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
+/**
+ * @author Andy.Cao
+ * @date 2018-11-21
+ * @deprecated
+ */
 public class SecurityInterceptor implements HandlerInterceptor {
 
     private List<String> excludeRequst;
@@ -28,7 +33,7 @@ public class SecurityInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response,
                              Object handler) throws Exception {
-    	System.out.println(">>>Security");
+        System.out.println(">>>Security");
 //        String pageurl = request.getRequestURI();
 //        AntPathMatcher matcher = new AntPathMatcher();
 //        boolean needLogin = true;

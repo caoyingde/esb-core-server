@@ -25,7 +25,7 @@
 
 	<bean id="clientFactory" class="org.esb.consumer.ConsumerFactoryBean">
 		<property name="akkaEsbSystem" ref="akkaSystemClient"></property>
-		<property name="packagesToScan" value="org.topteam.example"></property>
+		<property name="packagesToScan" value="org.example"></property>
 		<property name="lookUpWaitTime" value="1"></property>
 	</bean>
 </beans>

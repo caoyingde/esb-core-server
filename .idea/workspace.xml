@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ad0ca181-ccfd-41a4-9f42-db290496608e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/akka/AkkaEsbSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/akka/AkkaEsbSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/akka/AkkaSeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/akka/AkkaSeed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/akka/EsbContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/akka/EsbContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/common/CommPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/common/CommPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/common/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/common/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/common/URL.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/common/URL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/consumer/ConsumerBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/consumer/ConsumerBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/consumer/ConsumerFactoryBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/consumer/ConsumerFactoryBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/core/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/core/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/core/CoreServerActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/core/CoreServerActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/exception/AkkaEsbException.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/exception/AkkaEsbException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/AbstractHttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/AbstractHttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/Binder.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/Binder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/HttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/servlet/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/servlet/DispatcherServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/servlet/ServletHttpBinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/servlet/ServletHttpBinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/servlet/ServletHttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/servlet/ServletHttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/undertow/UndertowServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/undertow/UndertowServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/undertow/UndertowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/http/undertow/UndertowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/monitor/MonitorClientActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/monitor/MonitorClientActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/monitor/MonitorCoreActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/monitor/MonitorCoreActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/monitor/MonitorEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/monitor/MonitorEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/protocol/AbstractProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/protocol/AbstractProtocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/protocol/Protocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/protocol/Protocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/protocol/ProtocolEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/protocol/ProtocolEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/protocol/ProtocolException.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/protocol/ProtocolException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/protocol/ProtocolFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/protocol/ProtocolFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/protocol/ProtocolType.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/protocol/ProtocolType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/provider/ProviderBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/provider/ProviderBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/provider/ProviderFactoryBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/provider/ProviderFactoryBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/DefaultProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/DefaultProtocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/DefaultTimeOutHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/DefaultTimeOutHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/RpcBeanProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/RpcBeanProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/RpcEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/RpcEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/RpcProviderActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/RpcProviderActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/RpcServerActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/RpcServerActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/TimeOutHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/TimeOutHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/jms/JmsProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/jms/JmsProtocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/rest/RestServiceProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/rest/RestServiceProtocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/webservice/WebServiceProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/webservice/WebServiceProtocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/webservice/WebServiceProtocol3.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/webservice/WebServiceProtocol3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/BaseServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/BaseServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/Schedulable.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/Schedulable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/ServerActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/ServerActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/ServerEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/ServerEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/ServerFactoryBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/ServerFactoryBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/jms/JmsMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/jms/JmsMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/jms/JmsMessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/jms/JmsMessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/jms/JmsMessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/jms/JmsMessageType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/serialport/Serialport.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/serialport/Serialport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/serialport/SerialportListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/serialport/SerialportListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/serialport/SerialportServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/serialport/SerialportServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketException.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketLisenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketLisenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketType.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/tcp/SocketTcpActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/tcp/SocketTcpActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/tcp/SocketTcpHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/tcp/SocketTcpHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/tcp/SocketTcpLisenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/tcp/SocketTcpLisenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/util/UrlUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/main/java/org/esb/util/UrlUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/ConsumerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/ConsumerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/PackageScanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/PackageScanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/WebServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/WebServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-consumer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-consumer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-provider.xml" beforeDir="false" afterPath="$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-provider.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-example/src/main/java/org/esb/test/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-example/src/main/java/org/esb/test/TestMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-example/src/main/java/org/esb/test/httpclient/HttpClientServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-example/src/main/java/org/esb/test/httpclient/HttpClientServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-example/src/main/resources/conf/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/esb-example/src/main/resources/conf/spring-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/security/SecurityInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/security/SecurityInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/security/UserSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/security/UserSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-monitor-admin/src/main/webapp/page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/esb-monitor-admin/src/main/webapp/page/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esb-monitor-admin/src/main/webapp/page/template/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/esb-monitor-admin/src/main/webapp/page/template/template.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/esb-common/target/" />
+    <ignored path="$PROJECT_DIR$/esb-monitor-admin/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/esb-example/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CheckStyle-IDEA-workspace">
+    <option name="configuration">
+      <map>
+        <entry key="last-active-plugin-version" value="5.18.5" />
+      </map>
+    </option>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="946407227">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="3" />
+          <entry key="java" value="85" />
+          <entry key="md" value="1" />
+          <entry key="properties" value="3" />
+          <entry key="xml" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="3" />
+          <entry key="JAVA" value="85" />
+          <entry key="Markdown" value="1" />
+          <entry key="Properties" value="3" />
+          <entry key="XML" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="15" />
+          <entry key="java" value="54" />
+          <entry key="xml" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="15" />
+          <entry key="JAVA" value="54" />
+          <entry key="XML" value="10" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-provider.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-monitor.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/ConsumerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/WebServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/PackageScanTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-core.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-consumer.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/example/SimpleServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/example/SocketServerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+              <folding>
+                <element signature="e#888#1067#0" expanded="true" />
+                <element signature="e#1066#1067#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/example/TestPojo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="68" lean-forward="true" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>topteam</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/webservice/WebServiceProtocol3.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/DefaultProtocol.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/DefaultTimeOutHandler.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/RpcBeanProxy.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/RpcEvent.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/RpcProviderActor.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/RpcServerActor.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/rpc/TimeOutHandler.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/jms/JmsMessage.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/jms/JmsMessageListener.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/jms/JmsMessageType.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/serialport/Serialport.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/serialport/SerialportListener.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/serialport/SerialportServer.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/tcp/SocketTcpActor.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/tcp/SocketTcpHandler.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/tcp/SocketTcpLisenter.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketClient.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketContext.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketException.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketLisenter.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketServer.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketSession.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketType.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/BaseServer.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/Schedulable.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/ServerActor.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/ServerEvent.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/ServerFactoryBean.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/esb/util/UrlUtil.java" />
+        <option value="$PROJECT_DIR$/esb-example/src/main/java/org/esb/test/httpclient/HttpClientServer.java" />
+        <option value="$PROJECT_DIR$/esb-example/src/main/java/org/esb/test/TestMain.java" />
+        <option value="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/controller/BaseController.java" />
+        <option value="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/controller/DashboardController.java" />
+        <option value="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/security/SecurityInterceptor.java" />
+        <option value="$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/security/UserSession.java" />
+        <option value="$PROJECT_DIR$/esb-monitor-admin/src/main/webapp/page/template/template.html" />
+        <option value="$PROJECT_DIR$/esb-monitor-admin/src/main/webapp/page/index.html" />
+        <option value="$PROJECT_DIR$/esb-example/src/main/resources/conf/spring-config.xml" />
+        <option value="$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-provider.xml" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/example/SimpleService.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/example/SimpleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/example/SocketServerTest.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/main/java/org/example/TestPojo.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-core.xml" />
+        <option value="$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-consumer.xml" />
+        <option value="$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/ConsumerTest.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/WebServiceTest.java" />
+        <option value="$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/PackageScanTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="httpclient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-monitor-admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-monitor-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-monitor-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-monitor-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-monitor-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="monitor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-monitor-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="monitor" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esb-core-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esb-core" type="462c0819:PsiDirectoryNode" />
+              <item name="esb-monitor-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542781315637" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="D:/Program Files/nodejs/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="org.tinygroup.studio.service.component.PackagePrefixConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Twisted Trial">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad0ca181-ccfd-41a4-9f42-db290496608e" name="Default Changelist" comment="" />
+      <created>1542779896206</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542779896206</updated>
+      <workItem from="1542779902863" duration="1382000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1382000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Web" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="REST Client" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Graph Database Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="CheckStyle" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="PlantUML" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="JSF" />
+      <window_info anchor="right" id="Graph Database" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="CDI" />
+      <window_info anchor="right" id="Maven Projects" visible="true" weight="0.08955224" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/jms/JmsMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/jms/JmsMessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="10" selection-start-line="10" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/jms/JmsMessageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/serialport/Serialport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="3" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/serialport/SerialportListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/serialport/SerialportServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/tcp/SocketTcpActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/tcp/SocketTcpHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/tcp/SocketTcpLisenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketLisenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/socket/SocketType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/BaseServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/Schedulable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/ServerActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="14" selection-start-line="14" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/ServerEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/server/ServerFactoryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/util/HexUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/esb/util/UrlUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-example/src/main/java/org/esb/test/httpclient/HttpClientServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-example/src/main/java/org/esb/test/TestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/controller/DashboardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/security/SecurityInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-monitor-admin/src/main/java/org/esb/monitor/security/UserSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-monitor-admin/src/main/webapp/page/template/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-monitor-admin/src/main/webapp/page/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-816" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-monitor-admin/src/main/webapp/page/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-monitor-admin/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-monitor-admin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-609" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-example/src/main/resources/conf/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-example/src/main/resources/conf/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/example/SimpleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/example/SimpleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/example/SocketServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <element signature="e#888#1067#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/main/java/org/example/TestPojo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="68" lean-forward="true" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-provider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-core.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-consumer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/test/resources/spring-esb-monitor.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/ConsumerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/WebServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esb-common/src/test/java/org/esb/config/spring/PackageScanTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.6.4 (D:\Programs\Python\Python36\python.exe) (1) interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

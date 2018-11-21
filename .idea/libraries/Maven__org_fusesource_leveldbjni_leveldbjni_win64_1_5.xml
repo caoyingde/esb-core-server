@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.fusesource.leveldbjni:leveldbjni-win64:1.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.m2/repository/org/fusesource/leveldbjni/leveldbjni-win64/1.5/leveldbjni-win64-1.5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.m2/repository/org/fusesource/leveldbjni/leveldbjni-win64/1.5/leveldbjni-win64-1.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.m2/repository/org/fusesource/leveldbjni/leveldbjni-win64/1.5/leveldbjni-win64-1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -11,7 +11,9 @@ import org.jsoup.select.Elements;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by 枫 on 2014/8/4.
+ * @author Andy.Cao
+ * @date 2018-11-21
+ * @deprecated
  */
 @Component
 @Server
@@ -24,17 +26,17 @@ public class HttpClientServer extends BaseServer {
                 CookiePolicy.BROWSER_COMPATIBILITY);
 
         GetMethod get = new GetMethod("http://www.ip-adress.com/proxy_list/?k=time&d=desc");
-        get.setRequestHeader("Host","www.ip-adress.com");
-        get.setRequestHeader("User-Agent","Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36");
-        get.setRequestHeader("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
-        get.setRequestHeader("Referer","http://www.ip-adress.com/proxy_list/?k=time&d=desc");
+        get.setRequestHeader("Host", "www.ip-adress.com");
+        get.setRequestHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36");
+        get.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
+        get.setRequestHeader("Referer", "http://www.ip-adress.com/proxy_list/?k=time&d=desc");
         int code = httpClient.executeMethod(get);
         if (code == 200) {
             String html = get.getResponseBodyAsString();
             Document doc = Jsoup.parse(html);
-            Elements table =  doc.select("table.proxylist");
+            Elements table = doc.select("table.proxylist");
             System.out.println(table.size());
-        }else {
+        } else {
             System.out.println(code);
         }
     }

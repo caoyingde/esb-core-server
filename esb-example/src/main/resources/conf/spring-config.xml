@@ -11,7 +11,7 @@
 	http://www.springframework.org/schema/context 	
 	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-    <context:component-scan base-package="org.topteam.test"></context:component-scan>
+    <context:component-scan base-package="org.esb.test"></context:component-scan>
 
     <bean id="akkaSystemServer" class="org.esb.akka.AkkaEsbSystem"
           init-method="start" destroy-method="close">
