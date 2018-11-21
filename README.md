@@ -40,7 +40,7 @@ Consumer将所有提供者组成一个Router，可基于负载均衡来分发消
 
 -->init -->HeatBeat -->Sync Call
 
-![image](http://github.com/itmyhome2013/readme_add_pic/raw/master/images/nongshalie.jpg)
+![image](https://github.com/caoyingde/esb-core-server/blob/master/esb-example/doc/akka.png)
 
 2.3.1 高性能
 
